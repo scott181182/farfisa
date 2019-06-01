@@ -6,11 +6,13 @@ edition = "2018"
 
 [features]
 rpi = ["rppal"]
+kb = ["crossterm_input"]
 
 [dependencies]
 # jack = "0.6.0"
 fluidsynth = "0.0.1"
 rppal = { version = "0.11.2", optional = true }
+crossterm_input = { version = "0.3", optional = true }
 
 # [target.'cfg(linux)'.dependencies]
 # rppal = "0.11.2"
