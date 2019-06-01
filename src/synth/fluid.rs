@@ -8,11 +8,11 @@ use crate::synth::Synth;
 #[allow(dead_code)]
 pub struct FluidSynth
 {
-    settings: fluidsynth::settings::Settings,
-    pub player:    fluidsynth::synth::Synth,
-    driver:   fluidsynth::audio::AudioDriver,
-    sender: mpsc::Sender<InputEvent>,
-    receiver: mpsc::Receiver<InputEvent>
+    settings:   fluidsynth::settings::Settings,
+    pub player: fluidsynth::synth::Synth,
+    driver:     fluidsynth::audio::AudioDriver,
+    sender:     mpsc::Sender<InputEvent>,
+    receiver:   mpsc::Receiver<InputEvent>
 }
 
 impl FluidSynth

@@ -6,10 +6,7 @@ use crate::music::{Pitch, PitchClass};
 use crossterm_input::{self, RawScreen, InputEvent as TermInputEvent, KeyEvent};
 
 #[derive(Debug)]
-pub struct KeyboardController
-{
-
-}
+pub struct KeyboardController {  }
 
 impl KeyboardController
 {

@@ -8,6 +8,13 @@ use synth::Synth;
 
 fn main()
 {
+
+}
+
+#[test]
+#[cfg(feature = "kb")]
+fn test_keyboard()
+{
     let synth = synth::fluid::FluidSynth::new();
 
     let mut keyboard = controller::keyboard::KeyboardController::new();

@@ -2,7 +2,10 @@ use std::sync::mpsc;
 
 use crate::music::Pitch;
 
+#[cfg(feature = "kb")]
 pub mod keyboard;
+#[cfg(feature = "rpi")]
+pub mod gpio;
 
 pub enum InputEvent
 {
